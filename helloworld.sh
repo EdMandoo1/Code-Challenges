@@ -11,8 +11,8 @@
 
 
 # Main
-
-
+echo "hello world"
+echo "Hi my name is Eddie"
 
 # End
 
