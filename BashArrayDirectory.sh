@@ -8,7 +8,15 @@
 # Declaration of variables
 directories=("dir1.txt" "dir2.txt" "dir3.txt" "dir4.txt")
 # Declaration of functions
+mkdir $dir0
+mkdir $dir1
+mkdir $dir2
+mkdir $dir3
 echo I hope this works
-touch $directories
-
+# Creating text files in directories
+touch dir1.txt
+touch dir2.txt
+touch dir3.txt
+tough dir4.txt
+echo four text directories created
 # Main
