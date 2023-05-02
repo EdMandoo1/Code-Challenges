@@ -6,12 +6,12 @@
 # Purpose:                      Create 4 directories and put in an array
 
 # Declaration of variables
-dir=("dir1.txt" "dir2.txt" "dir3.txt" "dir4.txt")
+directory=("dir1.txt" "dir2.txt" "dir3.txt" "dir4.txt")
 # Declaration of functions
-mkdir $dir0
-mkdir $dir1
-mkdir $dir2
-mkdir $dir3
+mkdir ${directory(0)}
+mkdir ${directory(1)}
+mkdir ${directory(2)}
+mkdir ${directory(3)}
 echo "I hope this works"
 # Creating text files in directories
 touch dir(1).txt
