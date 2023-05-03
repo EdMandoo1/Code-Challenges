@@ -8,10 +8,11 @@
 # Declaration of variables
 counter=1
 # Declaration of functions
-while [ $counter -le 100 ]
+while [ $counter -le 10 ]
 do
-echo $counter
+echo Yo
 ((counter++))
+echo $counter
 done
 echo All done
 #Main
