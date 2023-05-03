@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Script Name:                  System Information
+# Author:                       Eduardo Ayala
+# Date of latest revision:      05/02/2023
+# Purpose:                      List Hardware on Ubuntu (Lab PC)
+
+# Get CPU information
+echo "=== CPU Information ==="
+sudo lshw -class processor | grep -E 'product|vendor|physical id|bus info|width'
+
+# Get RAM information
+echo "=== RAM Information ==="
+sudo lshw -class memory | grep -E 'size|clock|capacity|vendor|product|width'
+
+# Get system summary
+echo "=== System Summary ==="
+sudo lshw -short
