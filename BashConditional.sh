@@ -6,9 +6,14 @@
 # Purpose:                      To detect a file
 
 # Declaration of variables
-Sil=("SilverSurfer")
-echo "the most powerful superhero"
-# Create file for SilverSurfer
-if -e Sil [Does not exist] then touch {Sil.txt}
-
-# Declaration of functions
+Heros=("SilverSurfer" "Hulk" "Thor")
+#Main
+for Hero in "${Heros[@]}"
+do
+#Here is my Loop
+   if [[ "$Hero" == "SilverSurfer" ]]; then
+    echo "$Hero is the strongest!"
+   else 
+    echo "$Hero? I think not!"
+   fi
+done
