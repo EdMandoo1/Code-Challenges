@@ -7,11 +7,22 @@
 
 # Get CPU information
 echo "=== CPU Information ==="
-sudo lshw -class processor | grep -E 'product|vendor|physical id|bus info|width'
+sudo lshw -class processor| grep -E "product|vendor|physical id|bus info|width"
 
 # Get RAM information
 echo "=== RAM Information ==="
-sudo lshw -class memory | grep -E 'size|clock|capacity|vendor|product|width'
+sudo lshw -c memory | grep memory -A 3                                          
+
+# Get Display adapter
+echo "=== Display adapter ==="
+# Description, Product, Vendor, Physical ID, Bus Info
+sudo lshw | grep *-display -A 5
+# Width, Clock, Capabilities, Resources
+sudo lshw | grep *-display -A 12 | head -12 | tail -4
+
+# Get Network adapter
+echo "=== Network adapter ==="
+sudo lshw -class network | grep -E "description|product|vendor|physical id|bus info|logical name|version|serial|size|capacity|width|clock|capabilities|configuration|resources"
 
 # Get system summary
 echo "=== System Summary ==="
