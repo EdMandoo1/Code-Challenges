@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # Script Name:                  Port Scanning
 # Author:                       Eduardo Ayala
-# Date of latest revision:      07/06/23
+# Date of latest revision:      07/25/23
 # Purpose:                      TCP Port Range Scanner that tests whether a TCP port is open or closed
 
 # Import libraries
