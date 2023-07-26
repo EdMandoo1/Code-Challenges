@@ -9,6 +9,8 @@ import sys
 import socket
 from scapy.all import *
 
+# Replace <host>:<start_port>-<end_port> with the target host and the port range to scan, and <network_address>/<CIDR_block> with the network address and CIDR block to perform the ICMP Ping Sweep. 
+
 def scan_port(host, port):
     
     #Function to scan a TCP port on a given host.
