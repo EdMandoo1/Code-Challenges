@@ -34,6 +34,8 @@ def scan_host(host):
 
     print(f"Scanning ports for host: {host}")
 
+# Can use range(1,1025) to scan only well-known ports
+# Below scans ALL ports
     for port in range(1, 65536):
         if scan_port(host, port):
             print(f"Port {port} is open.")
