@@ -5,7 +5,7 @@
 # Purpose:        Reading the file, splitting each line into words, and then build list sorted in alphabetical order.
 
 # Open the file romeo.txt in read mode
-with open('/c/Users/ChosenOne/Downloads/romeo.txt', 'r') as file:
+with open('C:\\Users\\ChosenOne\\Downloads\\romeo.txt', 'r') as file:
     words = set()  # Use a set to store unique words
 
     # Read the file line by line
